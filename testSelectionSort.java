@@ -1,14 +1,13 @@
-java -ea Test
 public class testSelectionSort {
-	public void test() {
-		testPositive();
-		testNegative();
-		testMixed();
-		testDuplicates();
-	}
-
 	public testSelectionSort() {
 	}
+
+	public static void main(String args[]){
+		testSelectionSort test = new testSelectionSort();
+		test.testPositive();
+		test.testNegative();
+	}
+
 
 	public void testPositive() {
 		int[] arr = new int[5];
