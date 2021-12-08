@@ -1,3 +1,4 @@
+java -ea Test
 public class testSelectionSort {
 	public void test() {
 		testPositive();
@@ -28,7 +29,7 @@ public class testSelectionSort {
 	    int fixedArr[] = temp1.basicSelectionSort(arr);
 	    for (int i = 0; i < 5; i++) {
 	    	System.out.print(fixedArr[i]);
-	    	assertTrue(arr[i] > 0);
+	    	assert (arr[i] > 0);
 	    }
 	}
 
@@ -52,7 +53,7 @@ public class testSelectionSort {
 	    System.out.println("\n");
 	    for (int i = 0; i < 5; i++) {
 	    	System.out.print(fixedArr2[i]);
-	    	assertTrue(arr2[i] < 0);
+	    	assert (arr2[i] < 0);
 	    }
 	}
 }
